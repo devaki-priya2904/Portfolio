@@ -61,10 +61,48 @@
       animation: fadeUp 1.2s ease;
     }
 
-    nav { margin-top: 25px; animation: fadeUp 1.4s ease; }
-    nav a { margin: 0 14px; font-weight: 500; position: relative; }
-    nav a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background: var(--accent); transition: width 0.3s ease; }
-    nav a:hover::after { width: 100%; }
+        /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 16px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(11, 16, 32, 0.85);
+      backdrop-filter: blur(12px);
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    nav strong {
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      margin-left: 28px;
+      font-weight: 500;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
 
     section { padding: 80px 10%; }
 
@@ -195,14 +233,16 @@
     recommendation systems, and data visualization. Experienced in building end-to-end data products,
     evaluating models using industry metrics, and communicating insights through dashboards.
   </p>
-
   <nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+    <strong>Devaki Priya</strong>
+    <div>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   
